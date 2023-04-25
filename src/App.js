@@ -5,6 +5,7 @@ import { Routes, Route, Navigate } from "react-router-dom"
 import Layout from './Components/Layout';
 import Homepage from "./Pages/Homepage"
 import ManualAdjust from './Pages/Manualadjustments';
+import RefineOutput from './Pages/RefineOutput';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" element={ <Layout /> }>
         <Route index element={ <Homepage /> }/>
         <Route path="step1" element={ <ManualAdjust /> }/>
+        <Route path="step2" element={ <RefineOutput/> }/>
       </Route>
     </Routes>
   );
