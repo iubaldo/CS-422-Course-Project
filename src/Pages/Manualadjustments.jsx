@@ -24,13 +24,13 @@ class ManualAdjust extends Component {
 				</Box>
 				</Paper>
 
-				<Stack direction = "row" spacing = {85}>
+				<Stack direction = "row" padding={1} spacing = {65}>
 								{/*Box on the left */}
 								<Stack>
 						
 						{/*Brightness/Contrast Section*/}
 						<Paper variant = "outlined">
-						<Box sx={{width: 250, height: 30, backgroundColor: 'black'}}>
+						<Box sx={{width: 400, height: 30, backgroundColor: 'black'}}>
 							<Typography color = "white" variant="h5">Brightness/Contrast</Typography>
 						</Box>
 						</Paper>
@@ -41,7 +41,7 @@ class ManualAdjust extends Component {
 
 						{/*Hue/Saturation Section*/}
 						<Paper variant = "outlined">
-						<Box sx={{width: 250, height: 30, backgroundColor: 'black'}}>
+						<Box sx={{width: 400, height: 30, backgroundColor: 'black'}}>
 							<Typography color = "white" variant="h5">Hue/Saturation</Typography>
 						</Box>
 						</Paper>
@@ -52,7 +52,7 @@ class ManualAdjust extends Component {
 
 						{/*Exposure Section*/}
 						<Paper variant = "outlined">
-						<Box sx={{width: 250, height: 30, backgroundColor: 'black'}}>
+						<Box sx={{width: 400, height: 30, backgroundColor: 'black'}}>
 							<Typography color = "white" variant="h5">Exposure</Typography>
 						</Box>
 						</Paper>
