@@ -1,12 +1,16 @@
 import React, { Component } from "react";
-import { Paper } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography'
+import Stack from '@mui/material/Stack';
 
 class Header extends Component {
     render() {
     	return(
-      	<Paper sx={{width: 1920, height: 80, backgroundColor: 'Grey'}}>
-
-        </Paper>
+      	<Box sx={{width: "100%", height: "100%", backgroundColor: 'Grey'}}>
+          <Stack direction="row" alignContent="flex-start" padding={1}>
+            <img style={{width:"10%", height:"10%"}} src="/Images/logo.png" alt="logo"/>
+          </Stack>
+        </Box>
       );
     }
   }
