@@ -6,20 +6,16 @@ import Paper from '@mui/material/Paper';
 class ManualAdjust extends Component {
     render() {
     	return(
-      	<Box
-          sx={{
-            width: 300, height: 300, backgroundColor: 'primary.dark',
-            '&:hover': { backgroundColor: 'primary.main', 
-            opacity: [0.9, 0.8, 0.7],
-            },
-        }}
-				>
+      	<Box sx={{width: 300, height: 300, backgroundColor: 'primary.dark'}}>
+				{/* Stack for the text titles for "Inputs" and "Preview" Towards the top */}
 					<Stack 
 						direction = "row" 
-						justifyContents = "Center" 
+						justify = "Center" 
 						alignItems = "center" 
-						spacing = {2}>
-							
+						spacing = {24}>
+
+							<Item>Inputs</Item>
+							<Item>Preview</Item>
 
 					</Stack>
 				</Box>
