@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography'
 class Header extends Component {
     render() {
     	return(
-      	<Box sx={{width: 5000, height: 50, backgroundColor: 'black'}}></Box>
+      	<Box sx={{width: 5000, height: 80, backgroundColor: 'Grey'}}></Box>
       );
       }
     }
