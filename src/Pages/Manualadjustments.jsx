@@ -13,7 +13,19 @@ class ManualAdjust extends Component {
             opacity: [0.9, 0.8, 0.7],
             },
         }}
-    />
+				>
+					<Stack 
+						direction = "row" 
+						justifyContents = "Center" 
+						alignItems = "center" 
+						spacing = {2}>
+							
+
+					</Stack>
+				</Box>
+		
   );
 }
 }
+
+export default ManualAdjust;
