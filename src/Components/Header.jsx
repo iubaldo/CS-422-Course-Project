@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography'
+import { Paper } from '@mui/material';
 
 class Header extends Component {
     render() {
     	return(
-      	<Box sx={{width: 1920, height: 80, backgroundColor: 'Grey'}}></Box>
+      	<Paper sx={{width: 1920, height: 80, backgroundColor: 'Grey'}}>
+
+        </Paper>
       );
-      }
     }
+  }
 
 export default Header;
