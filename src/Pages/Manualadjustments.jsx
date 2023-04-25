@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography'
 
 class ManualAdjust extends Component {
     render() {
     	return(
-      	<Box sx={{width: 300, height: 300, backgroundColor: 'primary.dark'}}>
+      	<Box sx={{width: 5000, height: 50, backgroundColor: 'black'}}>
 				{/* Stack for the text titles for "Inputs" and "Preview" Towards the top */}
 					<Stack 
 						direction = "row" 
@@ -14,10 +15,11 @@ class ManualAdjust extends Component {
 						alignItems = "center" 
 						spacing = {24}>
 
-							<Item>Inputs</Item>
-							<Item>Preview</Item>
+							<Typography color="white" variant="h4">Inputs</Typography>
+							<Typography color="white" variant="h4">Preview</Typography>
 
 					</Stack>
+					<Stack direction = "vertical"><Typography variant = "h1">test</Typography></Stack>
 				</Box>
 		
   );
