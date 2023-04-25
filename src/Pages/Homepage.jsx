@@ -1,26 +1,25 @@
 import React, { Component } from "react";
-import styles from "../Styles/style.css"
+import "../App.css"
 
 // MUI
-import { Typography, Button, Paper } from '@mui/material';
+import { Typography, Button, Paper, Stack } from '@mui/material';
 
-
+// Pages
+import ManualAdjust from "./Manualadjustments"
 
 class Homepage extends Component {
   render() {
     return (
-      <div className = {styles.home_body}>
-        <Paper elevation={3}>
+      <Stack className = "home_body" spacing={4}>
+        <Paper elevation={3} style={{padding:20}}>
           <Typography variant="h1">
             Welcome to Poly
           </Typography>
         </Paper>
-        
-
-        <Button variant="outlined">
+        <Button variant="outlined" href="/step1">
           Get Started
         </Button>
-      </div>
+      </Stack>
     );
   }
 }
