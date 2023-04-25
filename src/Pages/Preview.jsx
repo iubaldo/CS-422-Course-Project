@@ -12,27 +12,26 @@ import Header from "../Components/Header";
 class Preview extends Component {
     render() {
     	return(
-			<Stack spacing>
+			<Stack>
 				<Header></Header>
 				
 				<Paper variant = "outlined" >
-				<Box sx={{width: 1918, height: 42, backgroundColor: 'black'}}>
-				<Stack direction = "row"  spacing = {150} >
-					<Typography color = "white" variant="h4">Inputs</Typography>
+				<Box sx={{width: "100%", height: "10%", backgroundColor: 'black'}}>
+				<Stack direction = "row"  spacing = {"50%"} justifyContent="center">
+					<Typography color = "white" variant="h4">Export Settings</Typography>
 					<Typography color = "white"  variant="h4">Preview</Typography>
 				</Stack>
 				</Box>
 				</Paper>
 
-				<Stack direction = "row" padding={1} spacing = {30}>
+				<Stack direction = "row" padding={"1%"} spacing = {"15%"} alignItems="center" justifyContent="center">
 
+          <Button style={{width:"35%"}} variant = "contained" size="large">
+            Export
+          </Button>
 
-				<Stack>
-						
-						<Paper elevation={3} style={{padding: 15, backgroundColor:"#f2f2f2"}}>
-						<img style={{width:1100, height:650}} src="/Images/projectimage.jpg"/>
-						</Paper>
-				</Stack>
+					<img style={{width:"50%", height:"50%"}} src="/Images/projectimage.jpg"/>
+
 
 				</Stack>
 
@@ -43,4 +42,4 @@ class Preview extends Component {
 }
 }
 
-export default ManualAdjust;
+export default Preview;
