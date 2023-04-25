@@ -19,15 +19,14 @@ function Footer() {
     <Stack
       direction="row" 
       width="100%" 
-      style={{backgroundColor:"#FFFFD0"}} 
-      justifyContent="space-evenly" 
-      alignItems="center">
-
-      <Container style={{backgroundColor:"#FFF0D0"}} >
-        <Button variant="contained" onClick={handleBack}>
-          Prev
-        </Button>
-      </Container>
+      style={{backgroundColor:"#94969c"}} 
+      justifyContent="space-around" 
+      alignItems="center"
+    >
+     
+      <Button variant="contained" onClick={handleBack} style={{marginLeft:"10%"}}>
+        Prev
+      </Button>
       
       <Container>
         <Stepper alternativeLabel activeStep={activeStep}>
@@ -37,7 +36,7 @@ function Footer() {
             return (
               <Step key={label} {...stepProps}>
                 <StepLabel {...labelProps}>
-                  <Typography style={{fontSize:24}}>
+                  <Typography style={{fontSize:24, color:"white"}}>
                     {label}
                   </Typography>
                 </StepLabel>
@@ -47,11 +46,9 @@ function Footer() {
         </Stepper>
       </Container>
 
-      <Container>
-        <Button variant="contained" onClick={handleNext}>
-          Next
-        </Button>
-      </Container>
+      <Button variant="contained" onClick={handleNext} style={{marginRight:"10%"}}>
+        Next
+      </Button>
 
     </Stack>
   ); 
