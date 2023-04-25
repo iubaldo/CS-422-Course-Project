@@ -24,7 +24,7 @@ class ManualAdjust extends Component {
 				</Box>
 				</Paper>
 
-				<Stack direction = "row" padding={1} spacing = {25}>
+				<Stack direction = "row" padding={1} spacing = {30}>
 								{/*Box on the left */}
 								<Stack>
 						
@@ -68,40 +68,7 @@ class ManualAdjust extends Component {
 				<Stack>
 						
 						<Paper elevation={3} style={{padding: 15, backgroundColor:"#f2f2f2"}}>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						</Paper>
-						<Paper elevation={3} style={{padding: 25, backgroundColor:"#f2f2f2"}}>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						</Paper>
-						<Paper elevation={3} style={{padding: 25, backgroundColor:"#f2f2f2"}}>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						</Paper>
-						<Paper elevation={3} style={{padding: 25, backgroundColor:"#f2f2f2"}}>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
-						<img style={{width:160, height:125}} src="/Images/projectimage.jpg"/>
+						<img style={{width:1100, height:650}} src="/Images/projectimage.jpg"/>
 						</Paper>
 				</Stack>
 
