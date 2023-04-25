@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import Header from "../Components/Header";
 
 
-class ManualAdjust extends Component {
+class Preview extends Component {
     render() {
     	return(
 			<Stack spacing>
@@ -25,7 +25,7 @@ class ManualAdjust extends Component {
 				</Paper>
 
 				<Stack direction = "row" padding={1} spacing = {30}>
-          
+
 
 				<Stack>
 						
