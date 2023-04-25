@@ -17,21 +17,23 @@ class InitialInput extends Component {
       
 			<Stack justifyContent = "center" alignItems = "center" spacing = {"2%"}>
         <Header />
-        <Stack direction="row" alignItems = "center" spacing={"0%"}>
-          <Typography variant = "h4">What kind of texture would you like to generate?</Typography>
-          <TextField label="Enter Noun here" variant="standard" />
-        </Stack>
-        <Stack direction="row" alignItems = "center" spacing={"0%"}>
-          <Typography variant = "h4">What kind of modifiers would you like to apply?</Typography>
-          <TextField label="Enter adjective(s) here" variant="standard" />
-        </Stack>
-        <Stack direction="row" alignItems = "center" spacing={"0%"}>
-          <Typography variant = "h4">Texture size:</Typography>
-          <TextField label="Enter size eg.(1500x500)" variant="standard" />
-        </Stack>
-        <Stack direction="row" alignItems = "center" spacing={"0%"}>
-          <Typography variant = "h4">Texture resolution:</Typography>
-          <TextField label="Enter resolution" variant="standard" />
+        <Stack direction="row" alignItems = "center" spacing={10}>
+          <Stack>
+            <Paper elevation={3} >
+              <Box padding={1} sx={{backgroundColor: 'black'}}>
+                <Typography color = "white" variant = "h4">What kind of texture would you like to generate?</Typography>
+              </Box>
+            </Paper>
+            <TextField label="Enter Nouns here" multiline rows={5}/>
+          </Stack>         
+          <Stack>
+            <Paper elevation={3} >
+              <Box padding={1} sx={{backgroundColor: 'black'}}>
+                <Typography color = "white" variant = "h4">What kind of modifiers would you like to apply?</Typography>
+              </Box>
+            </Paper>
+            <TextField label="Enter Adjectives here" multiline rows={5}/>
+          </Stack>
         </Stack>
 
         <Box sx={{width: "100%", height: "10%", backgroundColor: 'black'}}>
@@ -45,8 +47,6 @@ class InitialInput extends Component {
             <img src="/Images/projectimage.jpg" alt="placeholder"/>
             <img src="/Images/projectimage.jpg" alt="placeholder"/>
 				</Paper>
-
-        <Footer/>
       </Stack>
     );
   }

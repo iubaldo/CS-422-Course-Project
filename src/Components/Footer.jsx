@@ -10,18 +10,15 @@ function Footer() {
   const steps = ["Initial Input", "Refine Output", "Preview and Export"];
   
   const handleNext = () => {
-    if (activeStep !== steps.length) {
-      setActiveStep((prevActiveStep) => prevActiveStep + 1);
-      navigate("/step" + (activeStep + 1));
-    }  
-  }
-  
+    navigate(`/step${activeStep + 1}`)
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);     
+  };
+
   const handleBack = () => {
-    if (activeStep !== 0) {
-      setActiveStep((prevActiveStep) => prevActiveStep - 1);
-      navigate("/step" + (activeStep + 1));
-    }
-  }
+      navigate(`/step${activeStep - 1}`)
+
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);   
+  };
 
   return(
     <Paper style={{position:"fixed", bottom:0, width:"100%"}}>
@@ -31,9 +28,16 @@ function Footer() {
         style={{backgroundColor:"Grey"}} 
         justifyContent="space-around" 
         alignItems="center"
+        paddingTop={1}
+        paddingBottom={1}
       >
       
-        <Button variant="contained" onClick={handleBack} style={{marginLeft:"10%"}}>
+        <Button 
+          variant="contained" 
+          onClick={handleBack} 
+          style={{marginLeft:"10%"}}
+          disabled={activeStep === 0}
+        >
           Prev
         </Button>
         
@@ -55,8 +59,13 @@ function Footer() {
           </Stepper>
         </Container>
 
-        <Button variant="contained" onClick={handleNext} style={{marginRight:"10%"}}>
-          Next
+        <Button 
+          variant="contained" 
+          onClick={handleNext} 
+          style={{marginRight:"10%"}}
+          disabled={activeStep === steps.length - 1}
+        >
+          {activeStep !== steps.length - 1 ? "Next" : "Finish"}
         </Button>
 
       </Stack>

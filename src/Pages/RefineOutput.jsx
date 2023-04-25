@@ -17,20 +17,20 @@ class RefineOutput extends Component {
 				<Header />
 				
 					<Stack direction="row" padding={1}>
-						<Paper elevation={3} sx={{width:"20%", padding:1, marginRight:"10%", backgroundColor: 'black'}}>
-							<Typography color = "white" variant="h4">Inputs</Typography>
+						<Paper elevation={3} sx={{width:"22%", padding:1, marginRight:"9%", backgroundColor: 'black'}}>
+							<Typography color = "white" variant="h4">Refine</Typography>
 						</Paper>
-						<Paper elevation={3} sx={{padding:1, backgroundColor: 'black'}}>
+						<Paper elevation={3} sx={{width:"68%", padding:1, backgroundColor: 'black'}}>
 							<Typography color = "white"  variant="h4">Preview</Typography>
 						</Paper>
 					</Stack>
 				
 				<Stack direction = "row" width="90%" padding={1}>
 					{/*Box on the left */}
-					<Stack width="25%" marginRight="10%">
+					<Stack width="25%" marginRight="30%">
 						
 						{/*Brightness/Contrast Section*/}
-						<Paper variant = "outlined">
+						<Paper elevation={3} >
 							<Box padding={1} sx={{backgroundColor: 'black'}}>
 								<Typography color = "white" variant="h5">Brightness/Contrast</Typography>
 							</Box>
@@ -41,7 +41,7 @@ class RefineOutput extends Component {
 						<Slider defaultValue = {50} aria-label="Default" valueLabelDisplay="auto"/>
 
 						{/*Hue/Saturation Section*/}
-						<Paper variant = "outlined">
+						<Paper elevation={3} sx={{marginTop:"10%"}}>
 							<Box padding={1} sx={{backgroundColor: 'black'}}>
 								<Typography color = "white" variant="h5">Hue/Saturation</Typography>
 							</Box>
@@ -52,7 +52,7 @@ class RefineOutput extends Component {
 						<Slider defaultValue = {50} aria-label="Default" valueLabelDisplay="auto"/>
 
 						{/*Exposure Section*/}
-						<Paper variant = "outlined">
+						<Paper elevation={3} sx={{marginTop:"10%"}}>
 							<Box padding={1} sx={{backgroundColor: 'black'}}>
 								<Typography color = "white" variant="h5">Exposure</Typography>
 							</Box>
@@ -61,19 +61,16 @@ class RefineOutput extends Component {
 						<Slider defaultValue = {50} aria-label="Default" valueLabelDisplay="auto"/>
 
 						{/*Invert Colors*/}
-						<Button variant = "contained" size = "large">
+						<Button variant = "contained" size = "large" sx={{marginTop:"10%"}}>
 							Invert Colors
 						</Button>
 					</Stack>
 
-								
 					<Paper elevation={3} style={{padding: 15, backgroundColor:"#f2f2f2"}}>
-						<img src="/Images/projectimage.jpg" alt="placeholder"/>
+						<img width="600" src="/Images/projectimage.jpg" alt="placeholder"/>
 					</Paper>
 
 				</Stack>
-
-				<Footer />
 			</Stack>
 
 			

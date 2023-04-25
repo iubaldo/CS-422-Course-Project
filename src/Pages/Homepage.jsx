@@ -11,7 +11,7 @@ class Homepage extends Component {
         <Paper elevation={3} style={{padding:20, backgroundColor:"#f2f2f2"}}>
           <img src="/Images/logo.png" alt="logo"/>
         </Paper>
-        <Button variant="outlined" href="/step1">
+        <Button variant="outlined" href="/step0">
           Get Started
         </Button>
       </Stack>
